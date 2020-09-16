@@ -10,7 +10,6 @@ import {
 import { showAlert } from '../../util';
 import { Link } from 'react-router-dom';
 import { useAppDispatch } from '../../store';
-import { boolean } from 'yup';
 
 interface Props {
   diary: Diary;
@@ -43,7 +42,6 @@ const DiaryTile: FC<Props> = (props) => {
   };
 
   return (
-    <>
     <div className="diary-tile">
       <h2
         className="title"
@@ -92,7 +90,6 @@ const DiaryTile: FC<Props> = (props) => {
         </Link>
       </div>
     </div>
-    </>
   );
 };
 
